@@ -1,0 +1,164 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:"glyphicons halflings"; 
+	font-family: "Helvetica Neue" , Helvetica , Arial , "Hiragino Sans Gb" , "Microsoft YaHei" , "WenQuanYi Micro Hei" , sans-serif;
+}
+
+h1 , h3 , p , a , button{
+	font-family: "Helvetica Neue" , Helvetica , Arial , "Hiragino Sans Gb" , "Microsoft YaHei" , "WenQuanYi Micro Hei" , sans-serif;
+}
+
+/*第1屏添样式*/
+.onepage{
+	height: 750px;
+}
+.onepage-bg{
+	position: absolute;
+	height: 860px;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+}
+#onepagebg{
+	background-image: url("../img/header.jpg");
+}
+/*包含h1，p，a的父元素*/
+.title-text{
+	margin-left: 50px;
+}
+/*h1 的内容*/
+.title-text .headfontsize .headh1content{
+	font-size: 50pt;
+	color: #fff;
+	margin-top: 150px;
+	line-height: 75px;
+}
+/*p 元素*/
+.title-text .headfontsize p{
+	font-size: 20pt;
+	color: #fff;
+	margin-top: 30px;
+	line-height: 20px;
+}
+/*a 元素*/
+.title-text .headfontsize .btn{
+   font-size: 40pt;
+}	
+
+
+
+/*第2屏添样式*/
+.twopage{
+	position: relative;
+	height: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-image: url("../img/twopage.jpg");
+	/*background-size: cover;*/
+}
+.twopage .twopage-text{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.twopage .twopage-text h1{
+	font-size:60pt;
+	letter-spacing: 10px;
+}	
+.twopage .twopage-text h1 img{
+    margin-top: -25px;
+}	
+
+/*3块主体内容*/
+.twopage .row{
+	/*
+    */
+	margin-left: 10px; /*覆盖掉bootstrap原始的外边距*/
+	margin-right: 10px;
+}
+.twopage .twopage-courses{
+   position:relative;
+   /*height: 800px;*/
+   background-color: #fff;
+   overflow: hidden;
+   /*padding: 2px;*/
+   box-sizing: border-box;
+   margin-top: 10px;
+}
+.twopage .twopage-courses > a{
+   padding: 8px;
+   /*padding-bottom: 18px;*/
+   border: 2px solid #f00;
+   box-sizing: border-box;
+   position:relative;
+   display: block;
+   border-radius: 8px;
+   /*
+    float: left;
+   width: 100%;
+   */
+   height: 100%;
+   /*height: 800px;*/
+   text-align: center;
+}	
+
+ /*文字内容 absolute*/
+.twopage .twopage-courses .classicon{ 
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;	
+   color: #fff;
+   opacity: 0;
+   transition-duration: .7s;
+   -webkit-transition-duration: .7s;
+}
+.twopage .twopage-courses .classicon:hover{ 
+    background-color: #1eb450;
+    opacity: .8;
+} 	
+.twopage .twopage-courses .classicon h3{ 
+   margin-top: 150px;
+   color: #d1e973;
+   font-size: 50pt;
+}	
+.twopage .twopage-courses .classicon h1{ 
+   font-size: 40pt;
+   color: #fff5e1;
+}	
+
+/* 底部按钮 */
+.twopage .twopagebtn{
+	width: 100%;
+	margin:0% auto;
+	text-align: center; 
+}
+	
+.twopage .twopagebtn .btn{
+   font-size: 40pt;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

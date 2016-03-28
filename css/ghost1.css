@@ -1,0 +1,247 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+html , body {
+	color: #505050;
+	line-height: 1.75em;
+	background-color: #ebebeb;
+	font-family:"glyphicons halflings"; 
+    /*font-family: "楷体";*/
+	font-family: "Helvetica Neue" , Helvetica , Arial , "Hiragino Sans Gb" , "Microsoft YaHei" , "WenQuanYi Micro Hei" , sans-serif;
+}
+	
+
+
+/*头部样式*/
+.main-header{
+	text-align: center;
+	height: auto;
+	padding: 42px 0;
+	background-color: #fff;
+	background-image: url("../img/header.jpg");
+	background-position: center center;
+	background-size: cover;
+	/*border: 2px solid #000;*/
+}
+.main-header .row{
+	/*background-color: #fff;*/
+}
+.main-header .row .col-md-12{
+	/*background-color: #fff;*/
+}
+/*头部下面a标签样式*/
+.main-header .branding{
+   font-size: 3.5em;
+   color: #303030;
+	/*border: 2px solid #f00;*/
+}	
+/*设置所有的a标签*/
+a{
+	color: #e67e22;
+	outline: none;
+	text-decoration: none;
+}
+/*头部下面a标签里面的img*/
+.main-header .branding img{
+	max-width: 100%;
+}
+a:active , a:focus , a img{
+	outline: none;
+}
+
+
+
+/*导航父元素*/
+.main-navigation{
+    text-align: center;
+    background-color: #fff;
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 3px solid #e1e1e1;
+	margin-bottom: 35px;
+}
+/*导航标题头部：可切换的小图标button*/
+.main-navigation .navbar-header .navbar-toggle{
+     position: relative;
+     left: -40%;
+}	
+/*导航的子标题*/
+.main-navigation .navbar-collapse ul{
+	margin-bottom: 2px;
+	/*border: 1px solid #000;*/
+}	
+/*导航子标签高亮样式*/
+.main-navigation ul li.on{
+	border-bottom: 3px solid #E67E22;
+	margin-bottom: -2px;
+	background-color: rgb(240,240,240);
+}	
+.main-navigation ul li{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    
+    /*float: left;*/
+}	
+.main-navigation ul li a{
+   display: block;
+   color: #505050;
+   line-height: 4em;
+   padding: 0 21px;
+}	
+
+
+
+/*左边内容主体部分*/
+/*article样式*/
+.post{  /*.post 是所有article的通用类*/
+	position: relative;
+	height: auto;
+	padding: 30px;
+	margin-bottom: 35px;
+	background-color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/*article 1.1头部(包含标题/作者/时间)*/
+.post .post-head{
+	text-align: center;
+}
+.post .post-head .post-title{
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.post .post-head .post-title a{
+    color: #303030;
+}	
+.post .post-head .post-title a:hover{
+    text-decoration: none;
+    color: #e67e22;
+}
+
+.post .post-head .post-meta{
+    color: #959595;
+    margin-top: 14px; 
+}	
+/*article  1.2具体信息*/
+.post .post-content{
+	margin-top: 15px;
+	font-weight: 400;
+	font-size: 16px;
+	font-family: "Glyphicons Halflings";
+	color: #444443;
+}
+.post .post-content p{
+    margin-bottom: 1.46em;
+}	
+/*article  1.3按钮 "阅读全文" */
+.btn-info{
+	border: 1px solid #e67e22;
+	background: #e67e22;
+	color: #fff;
+	transition: all 0.4s ease-in-out;  /*按钮延缓效果*/
+	-webkit-transition: all 0.4s ease-in-out;
+}
+
+/*article  1.4 底部 (包含 主题/静态页面/自定义页面) */
+.post .post-footer{
+	margin-top: 30px;
+	border-top: 1px solid #ebebeb;
+	padding-top: 21px;
+    color: #959595;
+    line-height: 28px;
+}
+.post .post-footer .tag-list a{
+	display: inline-block;
+	margin-left: 10px;
+}	
+
+
+
+/*右边 社区/下载/标签云部分*/
+.sidebar .widget{
+	background: #fff;
+	padding: 21px 30px;
+	border-radius: 8px;
+}
+/* 社区/下载/标签云父元素 .widget */
+.widget{
+	margin-bottom: 35px;
+}
+.widget .title{
+    position: relative;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 21px;
+}	
+.btn-block{
+	background-color: #e67e22;
+	transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+
+/*标签云*/
+.widget .tag-cloud a{
+	display: inline-block;
+    color: #959595;
+    line-height: 1.5em;
+    border: 1px solid #ebebeb;
+    padding: 2px 7px;
+    margin-top: 7px;     
+    margin-left: 5px;     
+    margin-right: 5px;     
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.widget .tag-cloud a:hover{
+   text-decoration: none;
+   color: #fff;
+   background-color: #e67e22;
+}	
+
+
+/*网页底部*/
+.main-footer{
+	background: #202020;
+	padding-top: 30px;
+	color: #959595;
+}
+.main-footer .widget{
+   padding: 0 30px;
+   margin-bottom: 30px;
+}	
+.main-footer .widget .title{
+   position:relative;
+   padding-bottom: 7px;	
+   margin-top: 0;
+   color: #fff;
+   border-bottom: 1px solid #303030;
+}
+
+/*最新文章*/
+.main-footer .widget .recent-post .recent-single-post{
+	border-bottom: 1px dashed #303030;
+	padding-top: 10px;
+}
+
+.main-footer .widget .tag-cloud a{
+	border: 1px solid #303030;
+}
+
+/*页脚部分*/
+/*在桌面电脑上显示*/
+.main-bottom .showbig ul{
+	margin-top: 30px;
+}
+/*在移动设备上显示*/
+.main-bottom .showsmall ul{
+	margin-top: 7px;
+}
+
+
+
+
